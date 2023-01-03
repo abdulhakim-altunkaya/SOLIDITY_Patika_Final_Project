@@ -1,7 +1,13 @@
-Clean kod, SOLID prensiplerine uymaya önem göstermelisin. 
-Yazılan projenin nasıl ayağa kalktığı ve benzeri detayların 
-paylaşıldığı bir README.md file'ı projeye eklemelisin. Repository 
-kullanarak geliştirme yapmaya özen göstermelisin. 
+# Sample Hardhat Project
 
-# SOLIDITY_Patika_Final_Project
-Final Smart Contract + Website Frontend Project created for the "Paribu Hub - Akıllı Sözleşme &amp; Solidity Practicum"
+This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+
+Try running some of the following tasks:
+
+```shell
+npx hardhat help
+npx hardhat test
+REPORT_GAS=true npx hardhat test
+npx hardhat node
+npx hardhat run scripts/deploy.js
+```

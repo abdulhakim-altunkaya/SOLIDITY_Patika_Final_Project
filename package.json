@@ -52,24 +52,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "description": "This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.",
-  "main": "hardhat.config.js",
-  "directories": {
-    "test": "test"
-  },
-  "devDependencies": {
-    "mocha": "^10.2.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/abdulhakim-altunkaya/SOLIDITY_Patika_Final_Project.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/abdulhakim-altunkaya/SOLIDITY_Patika_Final_Project/issues"
-  },
-  "homepage": "https://github.com/abdulhakim-altunkaya/SOLIDITY_Patika_Final_Project#readme"
+  }
 }

@@ -1,0 +1,119 @@
+🚩🚩🚩 INSTALL PART 🚩🚩🚩
+
+
+⏩1) Create a github repo on Github, copy the repo link and go to any place on your computer and:
+git clone ...link.......
+
+⏩2) npx create-react-app .
+
+ 
+⏩3) 
+npm install "hardhat" "ethers" "dotenv"
+npm install "@nomicfoundation/hardhat-toolbox" "@nomiclabs/hardhat-ethers@^2.0.0" "@openzeppelin/contracts"
+npm install "@nomicfoundation/hardhat-network-helpers@^1.0.0" "@nomicfoundation/hardhat-chai-matchers@^1.0.0" "@nomiclabs/hardhat-etherscan@^3.0.0" "@types/mocha@^9.1.0" "@typechain/ethers-v5@^10.1.0" "@typechain/hardhat@^6.1.2" "chai@^4.2.0" "hardhat-gas-reporter@^1.0.8" "solidity-coverage@^0.7.21" "ts-node@>=8.0.0" "typechain@^8.1.0" "typescript@>=4.5.0"
+
+
+npx hardhat
+
+
+
+🚩🚩🚩 DOTENV and HARDHAT.CONFIG PART 🚩🚩🚩
+
+⏩4) Make sure you are on Metamask Mumbai testnet and that you have test Matic
+
+⏩5) create a .env file at the root of the folder and put inside code below. Be careful about 
+template literals and quotes.
+PRIVATE_KEY="....mymetamask account private key......"
+PROVIDER_URL=`...the https endpoint from alchemy.....`
+CONTRACT_ADDRESS = "....contract address after your deploy...."
+
+
+⏩6) Get the private key of your metamask account and paste it above.
+⏩7) Then go to Alchemy website, create a profile, go to Dashboard, click on "create application",
+then choose "Matic" and then "Mumbai". Then click to "create"
+Then click on "keys" and copy your "https" enpoint and paste it above.
+
+⏩8) Add ".env" to your .gitignore file
+
+⏩9) Go to hardhat.config.js and put inside:
+
+require("@nomicfoundation/hardhat-toolbox");
+require("@nomiclabs/hardhat-ethers");
+require("dotenv").config();
+
+module.exports = {
+  solidity: "0.8.1",
+  networks: {
+    matic: {
+      url: process.env.PROVIDER_URL,
+      accounts: [`0x${process.env.PRIVATE_KEY}`]
+    }
+  }
+};
+
+
+
+⏩10) Make sure you contract and hardhat.config file have the same compiler version.
+
+
+🚩🚩🚩  HARDHAT PART 🚩🚩🚩
+
+⏩17) Create your contract: Nusaybin.sol and paste inside:
+//SPDX-License-Identifier: GPL-3.0
+pragma solidity >=0.8.1;
+contract Piggybank {
+    address payable public owner;
+    constructor() {
+        owner = payable(msg.sender);
+    }
+    modifier onlyOwner() {
+        require(msg.sender == owner, "you are not the owner");
+        _;
+    }
+    function depositEther() external payable {}
+    function withdrawEther(address payable _to, uint _amount) external onlyOwner {
+        (bool success, ) = _to.call{value: _amount}("");
+        require(success, "probably no money in contract");
+    }
+    function destroyContract(address _to) external onlyOwner{
+        selfdestruct(payable(_to));
+    }
+    function getBalance() external view returns(uint) {
+        return address(this).balance;
+    }
+    function getOwner() external view returns(address) {
+        return owner;
+    }
+    function getContractAddress() external view returns(address) {
+        return address(this);
+    }
+}
+
+⏩18) Make sure compiler versions are the same across ".sol" and "hardhat.config.js" files
+⏩19) Then configure deploy.js
+async function main() {
+  const Piggybank = await hre.ethers.getContractFactory("Piggybank");
+  const piggybank = await Piggybank.deploy();
+  await piggybank.deployed();
+  console.log("Piggybank Contract is deployed to:", piggybank.address);
+}
+
+⏩20) npx hardhat compile
+
+⏩21) npx hardhat run ./scripts/deploy.js --network matic
+
+⏩22) copy contract address inside .env file:
+CONTRACT_ADDRESS = "...contract address......"
+
+⏩26) 
+
+⏩30) Then copy all flattened.sol and go to polygon.etherscan, 
+choose single file, then "gpl v3" and then click to "continue"
+Then paste inside the box and click on "verify".
+
+⏩31) 
+
+⏩32) 
+
+⏩33) 
+

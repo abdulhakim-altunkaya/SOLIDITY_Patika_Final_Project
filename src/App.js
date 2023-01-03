@@ -1,11 +1,9 @@
-import React from 'react'
-
 function App() {
   return (
-    <div>
-      <h1>PATIKA COURSE PROJECT</h1>
+    <div className="App">
+      fwefwefwef
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
