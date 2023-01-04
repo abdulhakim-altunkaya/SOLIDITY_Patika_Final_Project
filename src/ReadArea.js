@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import ReadAreaMinted from './ReadAreaMinted';
 
 const ReadArea = () => {
-
+    let[displayStatus, setDisplayStatus] = useState("none"); // kontrat bilgileri görüntüleme durumunu bu variabla kaydediyorum
     const { ethereum } = window;
     let[account, setAccount] = useState("");
 
@@ -10,6 +10,7 @@ const ReadArea = () => {
       if (window.ethereum !== "undefined") {
         const accounts = await ethereum.request({ method: "eth_requestAccounts"});
         setAccount(accounts[0]);
+        displayStatus === "none" ? setDisplayStatus("block") : setDisplayStatus("none"); //Kontrat bilgilerini toggle yapıyorum burda.
       } else {
         setAccount("Please install Metamask to your browser")
       }
@@ -17,14 +18,17 @@ const ReadArea = () => {
 
     return (
         <div id="readArea">
-            <p><button onClick={connectMetamask}>CONNECT TO METAMASK</button> <br />
-            Your Metamask Account: <br />{account} <br /> </p>
-            PetixCoin Token Symbol: PETIX <br />
-            PetixCoin Token Cap: 10000 <br />
-            PetixCoin Token Standard: ERC20 <br />
-            PetixCoin Token Decimals: 18 <br />
-            PetixCoin Token Mainnet: Fantom Testnet <br />
-            PetixCoin Token Contract Account: <br />  
+            <p><button onClick={connectMetamask}>CONNECT TO METAMASK</button> <br /></p>
+            <div id='contractDetailsSpan' style={{display: `${displayStatus}`}}>
+              <span>Your Metamask Account:</span>  <br />{account} <br /> 
+              <span>PetixCoin Token Symbol:</span>  PETIX <br />
+              <span>PetixCoin Token Cap: </span>  10000 <br />
+              <span>PetixCoin Token Standard:</span>  ERC20 <br />
+              <span>PetixCoin Token Decimals:</span>  18 <br />
+              <span>PetixCoin Token Mainnet:</span>  Fantom Testnet <br />
+              <span>PetixCoin Token Contract Account:</span>  0x516750245bBE7bcAc56f04486Ad6514A4594e28D<br />  
+            </div>
+
             <ReadAreaMinted />
         </div>
     )

@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Quicksand&display=swap'); /*Quicksand*/  /*Montserrat Alternates*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap'); /*Oswald*/
+
 
 body {
   margin: 0;
@@ -10,6 +12,7 @@ body {
 .App {
   display: flex;
   flex-direction: column;
+  font-family: 'Quicksand', sans-serif;
 }
 
 #upperBar {
@@ -66,17 +69,29 @@ body {
   -moz-box-shadow: 0 0 5px 3px #8b0000;
   box-shadow: 0 0 5px 3px #8b0000;
 }
-
+#contractDetailsSpan span {
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+}
 button {
   background-color: aquamarine;
   font-size: 21px;
   padding: 4px;
   border-radius: 5px;
   width: 45%;
+  cursor: pointer;
+  transition-duration: 0.3s;
 }
 button:hover {
-  background-color: yellow;
+  background-color: lightseagreen;
+  font-weight: bolder;
 }
+button:active {
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
 input {
   margin-top: 6px;
   margin-left: 19px;

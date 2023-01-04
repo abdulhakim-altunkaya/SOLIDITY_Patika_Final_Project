@@ -1,10 +1,10 @@
 const hre = require("hardhat");
 
 async function main() {
-  const Lock = await hre.ethers.getContractFactory("Lock");
-  const lock = await Lock.deploy();
-  await lock.deployed();
-  console.log( `Lock deployed to ${lock.address}`);
+  const PetixCoin = await hre.ethers.getContractFactory("PetixCoin");
+  const petixCoin = await PetixCoin.deploy(10000);
+  await petixCoin.deployed();
+  console.log( `petixCoin deployed to ${petixCoin.address}`);
 }
 
 main().catch((error) => {
