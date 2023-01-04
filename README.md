@@ -1,13 +1,10 @@
-# Sample Hardhat Project
+Clean kod, SOLID prensiplerine uymaya önem göstermelisin. 
+Yazılan projenin nasıl ayağa kalktığı ve benzeri detayların 
+paylaşıldığı bir README.md file'ı projeye eklemelisin. Repository 
+kullanarak geliştirme yapmaya özen göstermelisin. 
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+# SOLIDITY_Patika_Final_Project
+Final Smart Contract + Website Frontend Project created for the "Paribu Hub - Akıllı Sözleşme &amp; Solidity Practicum"
 
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+melon icon:
+<a href="https://www.flaticon.com/free-icons/melon" title="melon icons">Melon icons created by Freepik - Flaticon</a>

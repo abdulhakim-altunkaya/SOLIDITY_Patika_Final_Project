@@ -29,6 +29,7 @@ contract PetixCoin is ERC20Capped {
 
     //constructor'da petixcoin için bir cap ve owner'ı belirleyeceğim.
     //petixcoin 18 decimallı olacak. 18 tane sıfır yazmamak için cap*(10**18) dedim.
+    //petixcoinin bir capi olacak, yani maximum üretim/mint miktarı. 
     constructor(uint cap) ERC20("PetixCoin", "PETIX") ERC20Capped(cap*(10**18)) {
         owner = msg.sender;
     }
@@ -80,7 +81,7 @@ contract PetixCoin is ERC20Capped {
     function becomeMember(uint _amount) external {
         require(membersMapping[msg.sender] == false, "zaten uyesiniz");//üye mi değil mi kontrolü
         require(balanceOf(msg.sender) > 9, "10 petixcoin"); //üyelik ücreti var mı kontrlü
-
+        
         transfer(address(this), _amount*(10**18)); //üyelik ücretinin tahsili. Kontrata 10 petixcoin ödeme
 
         MembershipDetails memory newMember = MembershipDetails(msg.sender, _amount);
