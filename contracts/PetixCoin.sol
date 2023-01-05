@@ -80,8 +80,8 @@ contract PetixCoin is ERC20Capped {
     //isteyenler 10 petixcoin ödedikten sonra petixcoin sistemine üye olabilecek 
     function becomeMember(uint _amount) external {
         require(membersMapping[msg.sender] == false, "zaten uyesiniz");//üye mi değil mi kontrolü
-        require(balanceOf(msg.sender) > 9, "10 petixcoin"); //üyelik ücreti var mı kontrlü
-        
+        require(balanceOf(msg.sender) > 9, "en az 10 petixcoininiz olmali"); //üyelik ücreti var mı kontrlü
+        require(_amount > 9, "minimum 10 petixcoin");
         transfer(address(this), _amount*(10**18)); //üyelik ücretinin tahsili. Kontrata 10 petixcoin ödeme
 
         MembershipDetails memory newMember = MembershipDetails(msg.sender, _amount);

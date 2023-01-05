@@ -81,6 +81,7 @@ button {
   width: 45%;
   cursor: pointer;
   transition-duration: 0.3s;
+  margin-bottom: 10px;
 }
 button:hover {
   background-color: lightseagreen;
@@ -94,6 +95,7 @@ button:active {
 
 input {
   margin-top: 6px;
+  margin-bottom: 10px;
   margin-left: 19px;
   min-height: 33px;
   font-size: 19px;
@@ -120,6 +122,8 @@ input[type=number] {
   border-radius: 5px;
   font-style: italic;
   padding: 5px;
+  max-width: 80vw;
+  word-wrap: break-word;
 }
 
 #writeAreaBurn {
@@ -133,8 +137,9 @@ input[type=number] {
   }
   input {
       margin-left: 2px;
-      width: 44%;
+      width: 70%;
   };
+
 
 }
 
@@ -158,6 +163,8 @@ input[type=number] {
       padding-left: 15px;
       padding-right: 15px;
   }
-
+  button {
+    min-width: 250px !important;
+  }
 
 }

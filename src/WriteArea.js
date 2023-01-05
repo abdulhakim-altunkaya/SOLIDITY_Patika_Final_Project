@@ -1,13 +1,15 @@
 import React from 'react';
-import WriteAreaBurn from "./WriteAreaBurn.js";
-import WriteAreaMint from "./WriteAreaMint.js";
+import WABurn from "./WABurn.js";
+import WAMint from "./WAMint.js";
+import WABecomeMember from "./WABecomeMember.js";
 
 function WriteArea() {
 
   return (
     <div id="writeArea">
-      <WriteAreaMint />
-      <WriteAreaBurn />
+      <WAMint />
+      <WABurn />
+      <WABecomeMember />
     </div>
   )
   
