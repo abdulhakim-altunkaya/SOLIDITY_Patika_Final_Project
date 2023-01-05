@@ -5,7 +5,7 @@ import { CONTRACT_ABI } from "./ContractABI";
 import { useState } from 'react';
 
 function ReadAreaMinted() {
-    let [totalMinted, setTotalMinted] = useState();
+    let [totalMinted, setTotalMinted] = useState("");
     
     let signer;
     let provider;
@@ -17,11 +17,10 @@ function ReadAreaMinted() {
         contract = new ethers.Contract(CONTRACT_ADDRESS, CONTRACT_ABI, signer);
     }
 
-
     const getTotalSupply = async () => {
       await connectContract();
       const data1 = await contract.getTotalSupply();
-      const data2 = data1.toString();
+      const data2 = await data1.toString();
       setTotalMinted(data2);
     }
     return (
