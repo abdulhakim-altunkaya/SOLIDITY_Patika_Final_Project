@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import RAMinted from './RAMinted';
 import RAMyBalance from "./RAMyBalance";
 import RAContractBalance from "./RAContractBalance";
+import RACheckMembership from './RACheckMembership';
 
 const ReadArea = () => {
     let[displayStatus, setDisplayStatus] = useState("none"); // kontrat bilgileri görüntüleme durumunu bu variabla kaydediyorum
@@ -33,6 +34,7 @@ const ReadArea = () => {
 
             <RAMyBalance />
             <RAContractBalance />
+            <RACheckMembership />
             <RAMinted />
         </div>
     )
