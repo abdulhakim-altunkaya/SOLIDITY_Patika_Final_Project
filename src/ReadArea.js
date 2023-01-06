@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import ReadAreaMinted from './ReadAreaMinted';
+import RAMinted from './RAMinted';
+import RAMyBalance from "./RAMyBalance";
 
 const ReadArea = () => {
     let[displayStatus, setDisplayStatus] = useState("none"); // kontrat bilgileri görüntüleme durumunu bu variabla kaydediyorum
@@ -29,7 +30,8 @@ const ReadArea = () => {
               <span>PetixCoin Token Contract Account:</span>  0x516750245bBE7bcAc56f04486Ad6514A4594e28D<br />  
             </div>
 
-            <ReadAreaMinted />
+            <RAMyBalance />
+            <RAMinted />
         </div>
     )
 }

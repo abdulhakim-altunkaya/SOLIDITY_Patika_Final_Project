@@ -4,7 +4,7 @@ import { CONTRACT_ADDRESS } from './ContractAddress';
 import { CONTRACT_ABI } from "./ContractABI";
 import { useState } from 'react';
 
-function ReadAreaMinted() {
+function RAMinted() {
     let [totalMinted, setTotalMinted] = useState("");
     
     let signer;
@@ -29,4 +29,4 @@ function ReadAreaMinted() {
     )
 }
 
-export default ReadAreaMinted
+export default RAMinted;

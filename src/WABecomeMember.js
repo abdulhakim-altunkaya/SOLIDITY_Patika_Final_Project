@@ -5,7 +5,7 @@ import {CONTRACT_ABI} from "./ContractABI";
 import {CONTRACT_ADDRESS} from "./ContractAddress";
 
 function WABecomeMember() {
-    let[statusText, setStatusText] = useState(" ");
+    let[statusText, setStatusText] = useState(false);
     let[membershipInput, setMembershipInput] = useState("");
 
     let signer;
@@ -25,20 +25,20 @@ function WABecomeMember() {
             alert("you are already a member");
             return;
         } else if(membershipInput < 10) {
-            setStatusText("Zaten üyesiniz");
             return;
         } else {
             const txResponse = await contract.becomeMember(membershipInput);
             await txResponse.wait();
-            setStatusText("Tebrikler");
+            setStatusText(true);
         }
     }
   return (
     <div>
+        
         <button onClick={startMembership}>BECOME MEMBER</button>
         <input value={membershipInput} type="number" id="burnAmount" 
         onChange={e => setMembershipInput(e.target.value)} /> <br />
-        <p value={statusText}></p>
+        { statusText ? <p>Tebrikler üye oldunuz</p> : <p></p>}
 
     </div>
   )
