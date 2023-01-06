@@ -58,6 +58,7 @@ contract PetixCoin is ERC20Capped {
         return address(this);
     }
     //kaç petixcoinimiz olduğunu öğrenmek için kullabileceğimiz fonksiyon.
+    //PetixCoin bir ERC20 tokenı olduğu için balanceOf fonksiyonunu kullanabiliyoruz.
     function getYourBalance() external view returns(uint) {
         return balanceOf(msg.sender) / (10**18);
     }
