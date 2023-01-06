@@ -37,7 +37,7 @@ function WABecomeMember() {
         
         <button onClick={startMembership}>BECOME MEMBER</button>
         <input value={membershipInput} type="number" id="burnAmount" 
-        onChange={e => setMembershipInput(e.target.value)} /> <br />
+        onChange={e => setMembershipInput(e.target.value)} placeholder="min is 10"/> <br />
         { statusText ? <p>Tebrikler üye oldunuz</p> : <p></p>}
 
     </div>
