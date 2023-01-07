@@ -1,4 +1,4 @@
-<img src="./public/website_logo.png" width="200">
+<img src="./public/website_logo.png" width="200" text-align="center">
 
 # PETIXCOIN CLUB (PETIX)
 PetixCoin Club is a smart contract which is letting its users to mint PetixCoin Token and to become a member of PetixCoin Club by paying 10 PetixCoin.
@@ -40,7 +40,7 @@ Then click on "import tokens". Then paste PetixCoin contract address. Other info
 
 <strong>9) </strong>Once you become a member, you can discover other buttons as well.
 
-## TECHNICAL ASPECTS:
+## TECHNICAL ASPECTS
 
 <strong>Ethereum Token Standard:</strong> ERC20 <br>
 <strong>Frontend:</strong> React.js - a JavaScript library for building user interfaces. <br>
@@ -49,8 +49,11 @@ Then click on "import tokens". Then paste PetixCoin contract address. Other info
 <strong>Network:</strong> Fantom Testnet
 
 
-## OTHER ASPECTS:
+## OTHER ASPECTS
 
 <strong>Author:</strong> Abdulhakim Altunkaya <br>
 <strong>License:</strong> MIT, 2023 <br>
 <strong>Project created for:</strong> Patika Paribu Solidity Course, Final Project <br>
+
+Thank you for reading.
+<img src="./public/readme_finish.png" width="350" text-align="center">
