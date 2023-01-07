@@ -37,7 +37,7 @@ function WAMint() {
         <div style={{display: `${displayStatus}`}}>
           1) On the left, click on "Connect to Metamask" <br />
           2) Copy PetixCoin Token Contract Address <br />
-          3) Open Metamask, make sure you are on "Fantom Testnet", <br />
+          3) Open Metamask, make sure you are on "Fantom Testnet" and that you have Fantom test tokens <br />
           4) On Metamask, click on "import tokens" <br />
           5) Paste PetixCoin Token Contract Address in "Token Contract Address" <br />
           6) Wait 5 seconds and then click on "Add Custom Token". <br />
