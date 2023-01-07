@@ -12,30 +12,30 @@ The project is prepared for Patika Paribu Course program as final project.
 
 As the project has a frontend, you do not need to deploy any dependecy on your computer. Here are the easy steps to interact with PetixCoin:
 
-**1) **Make sure you have Metamask on your browser. Preferably use Google Chrome.
+<strong>1) </strong> Make sure you have Metamask on your browser. Preferably use Google Chrome.
 
-**2) **If you do not have "Fantom Testnet" in your Metamask networks list, then follow these steps below. If you have, you can skip to step 3.
+<strong>2) </strong>If you do not have "Fantom Testnet" in your Metamask networks list, then follow these steps below. If you have, you can skip to step 3.
 
-**2.a) **Open Metamask, find "Add Networks" button inside networks list and click on it.
-**2.b) **Click on "Add Networks Manually" and then copy paste following settings below and then click on "save":
+<strong>2.a) </strong>Open Metamask, find <span style="background-color: lightgray; padding: 3px">Add Networks</span> button inside networks list and click on it.
+<strong>2.b) </strong>Click on "Add Networks Manually" and then copy paste following settings below and then click on "save":
 
 Network name: fantom testnet
 New RPC URL: https://rpc.testnet.fantom.network/
 Chain ID: 4002
 Currency symbol: FTM 
 
-**3) **You will need Fantom Test tokens. Go to following website ( https://faucet.fantom.network/ ) and get some Fantom test tokens.
+<strong>3) </strong>You will need Fantom Test tokens. Go to following website ( https://faucet.fantom.network/ ) and get some Fantom test tokens.
 
-**4) **Now go to project website: https://petixcoin-patika.netlify.app/
+<strong>4) </strong>Now go to project website: https://petixcoin-patika.netlify.app/
 
-**5) **General rule: between each button click try to wait for 4 seconds. Blockchain needs a few seconds to process your button clicks.
+<strong>5) </strong>General rule: between each button click try to wait for 4 seconds. Blockchain needs a few seconds to process your button clicks.
 
-**6) **Click on "Connect Metamask". You will see PetixCoin contract address. Copy it, then go to your Metamask, click on "assets". 
+<strong>6) </strong>Click on "Connect Metamask". You will see PetixCoin contract address. Copy it, then go to your Metamask, click on "assets". 
 Then click on "import tokens". Then paste PetixCoin contract address. Other information will be filled up automatically.
 
-**7) **Now go the right side of the webpage, you will see "Mint PetixCoin" tokens. Enter "30" inside the input field, then click on it.
+<strong>7) </strong>Now go the right side of the webpage, you will see "Mint PetixCoin" tokens. Enter "30" inside the input field, then click on it.
 
-**7) **You can now become a member. Find "Become Member" button
+<strong>8) </strong>You can now become a member. Find "Become Member" button
 
 ## PREREQUISITES
 What things you need to install the software and how to install them
