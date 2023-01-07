@@ -38,6 +38,7 @@ Then click on "import tokens". Then paste PetixCoin contract address. Other info
 
 <strong>8) </strong>You can now become a member. Find "Become Member" button, then enter at least 10 as input and click on button. 
 
+<strong>9) </strong>Once you become a member, you can discover other buttons as well.
 
 ## TECHNICAL ASPECTS:
 
@@ -50,6 +51,6 @@ Then click on "import tokens". Then paste PetixCoin contract address. Other info
 
 ## OTHER ASPECTS:
 
-<strong>Author:</strong> Abdulhakim Altunkaya
-<strong>License:</strong> MIT, 2023
-<strong>Project created for:</strong> Patika Paribu Solidity Course, Final Project
+<strong>Author:</strong> Abdulhakim Altunkaya <br>
+<strong>License:</strong> MIT, 2023 <br>
+<strong>Project created for:</strong> Patika Paribu Solidity Course, Final Project <br>
