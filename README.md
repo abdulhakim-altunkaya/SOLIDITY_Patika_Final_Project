@@ -1,4 +1,4 @@
-<img src="./public/website_logo.png" width="200" text-align="center">
+<img src="./public/website_logo.png" width="250" style="text-align: center;">
 
 # PETIXCOIN CLUB (PETIX)
 PetixCoin Club is a smart contract which is letting its users to mint PetixCoin Token and to become a member of PetixCoin Club by paying 10 PetixCoin.
@@ -56,4 +56,6 @@ Then click on "import tokens". Then paste PetixCoin contract address. Other info
 <strong>Project created for:</strong> Patika Paribu Solidity Course, Final Project <br>
 
 Thank you for reading.
-<img src="./public/readme_finish.png" width="350" text-align="center">
+
+<img src="./public/readme_finish.png" width="270" style="text-align: center;">
+
