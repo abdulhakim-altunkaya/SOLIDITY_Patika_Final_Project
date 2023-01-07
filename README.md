@@ -16,13 +16,14 @@ As the project has a frontend, you do not need to deploy any dependecy on your c
 
 <strong>2) </strong>If you do not have "Fantom Testnet" in your Metamask networks list, then follow these steps below. If you have, you can skip to step 3.
 
-<strong>2.a) </strong>Open Metamask, find <span style="background-color: lightgray; padding: 3px">Add Networks</span> button inside networks list and click on it.
+<strong>2.a) </strong>Open Metamask, find "Add Networks" button inside networks list and click on it.
+
 <strong>2.b) </strong>Click on "Add Networks Manually" and then copy paste following settings below and then click on "save":
 
-Network name: fantom testnet
-New RPC URL: https://rpc.testnet.fantom.network/
-Chain ID: 4002
-Currency symbol: FTM 
+<strong>Network name:</strong> fantom testnet <br>
+<strong>New RPC URL:</strong> https://rpc.testnet.fantom.network/ <br>
+<strong>Chain ID:</strong> 4002 <br>
+<strong>Currency symbol:</strong> FTM  <br>
 
 <strong>3) </strong>You will need Fantom Test tokens. Go to following website ( https://faucet.fantom.network/ ) and get some Fantom test tokens.
 
@@ -35,41 +36,20 @@ Then click on "import tokens". Then paste PetixCoin contract address. Other info
 
 <strong>7) </strong>Now go the right side of the webpage, you will see "Mint PetixCoin" tokens. Enter "30" inside the input field, then click on it.
 
-<strong>8) </strong>You can now become a member. Find "Become Member" button
+<strong>8) </strong>You can now become a member. Find "Become Member" button, then enter at least 10 as input and click on button. 
 
-## PREREQUISITES
-What things you need to install the software and how to install them
 
-Node.js
-npm (comes with Node.js)
-Installing
-A step by step series of examples that tell you how to get a development env running
+## TECHNICAL ASPECTS:
 
-Clone the repository
-Copy code
-git clone https://github.com/your-username/your-project.git
-Install dependencies
-Copy code
-npm install
-Start the development server
-Copy code
-npm start
-Open your browser to http://localhost:3000
-Deployment
-Add additional notes about how to deploy this on a live system
+<strong>Ethereum Token Standard:</strong> ERC20 <br>
+<strong>Frontend:</strong> React.js - a JavaScript library for building user interfaces. <br>
+<strong>Contract Compilation and Deployment Platform:</strong> Hardhat <br>
+<strong>Contract - Frontend Connection:</strong> Ethers.js <br>
+<strong>Network:</strong> Fantom Testnet
 
-Built With
-React.js - JavaScript library for building user interfaces
-ERC20 - Ethereum Token Standard
-Contributing
-Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
 
-Authors
-Your name
-License
-This project is licensed under the MIT License - see the LICENSE file for details
+## OTHER ASPECTS:
 
-Acknowledgments
-Hat tip to anyone whose code was used
-Inspiration
-etc
+<strong>Author:</strong> Abdulhakim Altunkaya
+<strong>License:</strong> MIT, 2023
+<strong>Project created for:</strong> Patika Paribu Solidity Course, Final Project
