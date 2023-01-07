@@ -107,7 +107,7 @@ contract PetixCoin is ERC20Capped {
         return membersMapping[otherMember];
     }
     //üye olunurken ne kadar ücret ödendiğini görme fonksiyonu
-    function seeMembersshipDetails(uint _id) external view returns(MembershipDetails memory) {
+    function seeMembershipDetails(uint _id) external view returns(MembershipDetails memory) {
         return membershipDetailMapping[_id];
     }
 }
