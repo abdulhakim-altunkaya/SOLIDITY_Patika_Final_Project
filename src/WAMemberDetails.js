@@ -20,17 +20,21 @@ function WAMemberDetails() {
 
     const getMemberHistory = async () => {
       await connectContract();
-      const data = await contract.seeMembershipDetails(memberId);
+      const txResponse = await contract.seeMembershipDetails(memberId);
+      const dataAddress = await txResponse.member;
+      const dataAmount1 = await txResponse.amount;
+      const dataAmount2 = dataAmount1.toString();
+      setMemberHistory(`${dataAddress} has paid ${dataAmount2} PetixCoin when becoming member`)
     }
 
-  return (
-    <div>
-        <button onClick={getMemberHistory}>SEE MEMBERSHIP HISTORY</button>
-        <input value={memberId} type="number" placeholder='enter member id'
-        onChange={e => setMemberId(e.target.value)} />
-        <p>{memberHistory}</p>
-    </div>
-  )
+    return (
+      <div>
+          <button onClick={getMemberHistory}>SEE MEMBERSHIP HISTORY</button>
+          <input value={memberId} type="number" placeholder='enter member id'
+          onChange={e => setMemberId(e.target.value)} />
+          <p>{memberHistory}</p>
+      </div>
+    )
 }
 
 export default WAMemberDetails

@@ -3,6 +3,7 @@ import WABurn from "./WABurn.js";
 import WAMint from "./WAMint.js";
 import WABecomeMember from "./WABecomeMember.js";
 import WALeave from "./WALeave";
+import WAMemberDetails from './WAMemberDetails.js';
 
 function WriteArea() {
 
@@ -12,6 +13,7 @@ function WriteArea() {
       <WABurn />
       <WABecomeMember />
       <WALeave />
+      <WAMemberDetails/>
     </div>
   )
   
